@@ -32,7 +32,3 @@ func Verify(r1 decimal.Decimal, r2 decimal.Decimal, y1 decimal.Decimal, y2 decim
 	cond2 := r2.Cmp(beta.Pow(s).Mul(y2.Pow(c).Mod(p)).Mod(p))
 	return cond1 == 0 && cond2 == 0
 }
-
-func main() {
-	decimal.NewFromFloat(1.23)
-}
